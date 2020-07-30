@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+
+        <title>스파르타코딩클럽 | 나홀로 메모장</title>
+
+        <!-- style -->
+        <style type="text/css">
+
+            .picture {
+                background-image: url("https://post-phinf.pstatic.net/MjAyMDA1MTJfMjgg/MDAxNTg5MjQ4MDkxNDE0.V3v32s5a0d1VfgQeXpWwh9stApUECMktu6Gz3KzxL90g.tJP7KR-f5tDprXYjq3_GPd6IIlMQBRYOM33IQcqwHfwg.PNG/img-box.png?type=w1200");
+                background-size: cover;
+                background-position: center;
+                width: 800px;
+                height: 500px;
+                border: black solid;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .wrap {
+                width: 800px;
+                text-align: center;
+
+
+            }
+
+            .btn-primary {
+
+            }
+
+            .mid {
+                with: 500px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+
+            }
+        </style>
+        <script>
+            function order() {
+                alert('주문이 완료되었습니다.')
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="picture"></div>
+            <h1>상품제목 <span style="font-size:15px">가격: 360,000원 / 개</span></h1>
+            <h5>닌텐도 스위치 HAD 신형 동물의숲 에디션 한국 새제품 한국정식 발매판입니다.
+                <p></p>
+                타이틀은 미포함되게 나온 제품입니다 정식 AS되는 국내정발 입니다
+            </h5>
+            <p>
+            </p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">옵션</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>--옵션을 선택하세요--</option>
+                    <option value="1">동물의 숲 에디션 단품</option>
+                    <option value="2">동물의 숲 에디션 단품 + 동물의 숲</option>
+                    <option value="3">동물의 숲 에디션 단품 + 동물의 숲 + 아미보 카드</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">전화번호</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+            <div class="mid">
+                <input onclick=order() class="btn btn-primary" type="button" value="주문하기">
+            </div>
+        </div>
+
+    </body>
+
+</html>
