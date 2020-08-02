@@ -1,3 +1,8 @@
+from pymongo import MongoClient
+
+client = MongoClient('localhost', 27017)
+db = client.dbsparta
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -18,4 +23,10 @@ for tr in trs:
 # body-content > div.newest-list > div > table > tbody > tr:nth-child(7) > td.info > a.title.ellipsis
         artist = tr.select_one('td.info > a.artist.ellipsis').text
 #body-content > div.newest-list > div > table > tbody > tr:nth-child(1) > td.info > a.artist.ellipsis
-print(rank)
+        doc = {
+            'rank': rank,
+            'title': title,
+            'artist': artist,
+
+        }
+        db.genie.insert_one(doc)
